@@ -2,7 +2,7 @@ const API_BASE = String(window.IMAGE_ADMIN_CONFIG?.apiBaseUrl || "").replace(/\/
 const translations = {
   zh: {
     back: "返回網站", eyebrow: "私人 Repo · 管理者", title: "網站圖片管理",
-    intro: "使用具有私人 repo 寫入權限的 GitHub 帳號登入。儲存後會直接提交至 main 並自動部署；此網站上的圖片會公開給所有訪客。",
+    intro: "使用具有私人 repo 寫入權限的 GitHub 帳號登入。儲存後會自動發布到網站，更新可能需要幾分鐘；照片會公開給所有訪客。",
     setupTitle: "管理服務尚未啟用", setupBody: "請先完成 Cloudflare Worker 與 GitHub App 設定，再填入管理 API 網址。",
     loginTitle: "管理者登入", loginHelp: "登入後即可管理網站圖片。唯有 repo 寫入成員可儲存變更。", loginButton: "使用 GitHub 登入",
     signedInAs: "目前登入：", logout: "登出", fixedEyebrow: "圖片位置", fixedTitle: "首頁影片封面與教授照片",
@@ -72,7 +72,7 @@ const translations = {
   },
   en: {
     back: "Back to website", eyebrow: "PRIVATE REPOSITORY · ADMIN", title: "Website Image Manager",
-    intro: "Sign in with a GitHub account that can write to the private repository. Saves commit directly to main and trigger deployment. Images on this public website are visible to everyone.",
+    intro: "Sign in with a GitHub account that can write to the private repository. Saves are published automatically; updates can take a few minutes. Photos are visible to all visitors.",
     setupTitle: "Management service is not enabled", setupBody: "Configure the Cloudflare Worker and GitHub App, then set the management API URL.",
     loginTitle: "Administrator sign-in", loginHelp: "Sign in to manage site images. Only repository members with write access can save changes.", loginButton: "Sign in with GitHub",
     signedInAs: "Signed in as ", logout: "Sign out", fixedEyebrow: "IMAGE SLOTS", fixedTitle: "Homepage video poster and professor photo",
