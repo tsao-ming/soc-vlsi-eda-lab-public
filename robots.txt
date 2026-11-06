@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tsao-ming.github.io/soc-vlsi-eda-lab-public/sitemap.xml

@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="陳中平實驗室｜國立臺灣大學 SoC VLSI-EDA Laboratory，介紹陳中平教授、研究團隊，以及晶片實體設計、電源完整性與 Thermal EDA 熱分析研究。"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://tsao-ming.github.io/soc-vlsi-eda-lab-public/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tsao-ming.github.io/soc-vlsi-eda-lab-public/" />
+    <meta property="og:title" content="陳中平實驗室｜SoC VLSI-EDA Laboratory｜臺大電機" />
+    <meta property="og:description" content="國立臺灣大學陳中平實驗室，研究 VLSI、EDA、電源完整性與晶片熱分析。" />
+    <meta name="theme-color" content="#101d2a" />
+    <title>陳中平實驗室｜SoC VLSI-EDA Laboratory｜臺大電機</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "EducationalOrganization",
+          "@id": "https://tsao-ming.github.io/soc-vlsi-eda-lab-public/#organization",
+            "name": "陳中平實驗室（SoC VLSI-EDA Laboratory）",
+            "alternateName": ["陳中平實驗室", "SoC VLSI-EDA Lab", "NTU SoC VLSI-EDA Laboratory"],
+          "url": "https://tsao-ming.github.io/soc-vlsi-eda-lab-public/",
+            "description": "國立臺灣大學電機工程學系暨電子工程學研究所，由陳中平教授主持，研究 VLSI、EDA、電源完整性與晶片熱分析。",
+            "parentOrganization": { "@type": "CollegeOrUniversity", "name": "國立臺灣大學" },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "羅斯福路四段一號 博理館 405 室",
+              "addressLocality": "臺北市",
+              "addressCountry": "TW"
+            },
+          "member": { "@id": "https://tsao-ming.github.io/soc-vlsi-eda-lab-public/#professor" }
+          },
+          {
+            "@type": "Person",
+          "@id": "https://tsao-ming.github.io/soc-vlsi-eda-lab-public/#professor",
+            "name": "陳中平",
+            "jobTitle": "教授",
+            "url": "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=943008",
+          "worksFor": { "@id": "https://tsao-ming.github.io/soc-vlsi-eda-lab-public/#organization" }
+          }
+        ]
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23101d2a'/%3E%3Cpath d='M7 7h8v8H7zm10 0h8v8h-8zM7 17h8v8H7zm10 0h8v8h-8z' fill='%234bc9bd'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=member-gallery-crop-20261105-1" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skipLink">跳至主要內容</a>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="SoC VLSI-EDA Laboratory 首頁" data-i18n-aria="brandLabel">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-copy">
+          <strong>SoC VLSI-EDA</strong>
+          <small>LABORATORY · NTU EE · BL405</small>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-aria="menuLabel">
+        <span class="sr-only" data-i18n="menuLabel">開啟導覽選單</span>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主要導覽" data-i18n-aria="navLabel">
+        <a href="#about" data-i18n="navAbout">實驗室</a>
+        <a href="#research" data-i18n="navResearch">研究方向</a>
+        <a href="optimization.html" data-i18n="navCourse">課程資源</a>
+        <a href="career.html" data-i18n="navCareer">畢業出路</a>
+        <a href="#professor" data-i18n="navProfessor">指導教授</a>
+        <a href="#teacher-quotes" data-i18n="navTeacherQuotes">老師名言</a>
+        <a href="http://ccf.ee.ntu.edu.tw/~cchen/" target="_blank" rel="noopener noreferrer" data-i18n="navLegacyLabSite">陳中平實驗室舊網站</a>
+        <a href="#members" data-i18n="navMembers">研究團隊</a>
+        <a href="#publications" data-i18n="navPublications">論文</a>
+        <a href="#gallery" data-i18n="navGallery">活動相簿</a>
+        <a class="nav-contact" href="#contact"><span data-i18n="navContact">聯絡我們</span><span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to English">EN</button>
+    </header>
+
+    <main id="main">
+      <section class="hero hero-video-layout" id="home" aria-labelledby="hero-title">
+        <video class="hero-photo hero-video" autoplay muted loop controls playsinline preload="metadata"
+          poster="assets/lab-team-poster.jpg" data-image-slot="hero"
+          aria-label="SoC VLSI-EDA 實驗室活動影片" data-i18n-aria="heroVideoLabel">
+          <source src="assets/lab-team.mp4" type="video/mp4" />
+          您的瀏覽器不支援影片播放。
+        </video>
+        <div class="hero-shade"></div>
+        <div class="hero-content page-shell">
+          <p class="eyebrow hero-eyebrow" data-i18n="heroEyebrow"><span class="live-dot"></span> NATIONAL TAIWAN UNIVERSITY · EE</p>
+          <h1 id="hero-title" data-i18n="heroTitle">超大型積體電路系統晶片<br />暨電腦輔助設計實驗室</h1>
+          <p class="hero-en">SoC VLSI-EDA Laboratory</p>
+          <div class="hero-bottom">
+            <p data-i18n="heroLead">從演算法到晶片實體設計，<br class="mobile-break" />探索更高效、更可靠的 IC 設計方法。</p>
+            <a class="round-link" href="#about" aria-label="往下了解實驗室" data-i18n-aria="heroScroll"><span>↓</span></a>
+          </div>
+        </div>
+        <div class="hero-index" aria-hidden="true">01 <span>/</span> 06</div>
+      </section>
+
+      <aside class="admissions-notice" aria-label="研究生招生公告" data-i18n-aria="admissionsLabel">
+        <div class="page-shell admissions-inner">
+          <span class="notice-mark" aria-hidden="true">!</span>
+          <p data-i18n="admissionsNotice">115 學年度研究生名額已額滿，請勿再來信。</p>
+        </div>
+      </aside>
+
+      <section class="intro section-pad" id="about">
+        <div class="page-shell intro-grid">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="aboutEyebrow"><span class="eyebrow-line"></span> ABOUT THE LAB</p>
+            <h2 data-i18n="aboutTitle">讓晶片設計<br /><em>更智慧、更可靠。</em></h2>
+            <p class="heading-note" data-i18n="aboutNote">研究電腦輔助設計，打造下一代積體電路的設計方法與工具。</p>
+          </div>
+          <div class="intro-copy">
+            <p class="lead-copy" data-i18n="aboutLead">
+              <strong>超大型積體電路系統晶片暨電腦輔助設計實驗室</strong>（SoC VLSI-EDA Laboratory）隸屬於國立臺灣大學電機工程學系暨電子工程學研究所，位於臺大博理館 405 室，由陳中平教授主持。
+            </p>
+            <p data-i18n="aboutBody">
+              團隊研究涵蓋電子設計自動化、積體電路實體設計與最佳化、電路模擬、電源完整性、熱分析，以及高效能低功耗數位電路與微處理機設計。面對先進製程與大型晶片的挑戰，我們結合數值演算法、平行運算與設計自動化，讓分析更快速、設計更有效率。
+            </p>
+            <a class="text-link" href="#research"><span data-i18n="exploreResearch">探索研究方向</span><span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="page-shell motto-band">
+          <p class="eyebrow" data-i18n="mottoEyebrow"><span class="eyebrow-line"></span> LAB MOTTO · 實驗室箴言</p>
+          <blockquote data-i18n="labMotto">老師畫餅　學生充飢</blockquote>
+        </div>
+        <div class="page-shell facts-row" aria-label="實驗室資訊" data-i18n-aria="labFactsLabel">
+          <div class="fact"><span class="fact-value">NTU</span><span class="fact-label" data-i18n="factNtu">國立臺灣大學</span></div>
+          <div class="fact"><span class="fact-value">EE / EDA</span><span class="fact-label" data-i18n="factDepartment">電機工程學系暨電子工程學研究所</span></div>
+          <div class="fact"><span class="fact-value" data-i18n="factBuilding">博理館 405 室</span><span class="fact-label" data-i18n="factLocation">實驗室所在地</span></div>
+          <div class="fact"><span class="fact-value">VLSI · EDA</span><span class="fact-label" data-i18n="factResearch">研究核心</span></div>
+        </div>
+      </section>
+
+      <section class="research-section section-pad" id="research">
+        <div class="page-shell">
+          <div class="section-topline">
+            <div>
+              <p class="eyebrow" data-i18n="researchEyebrow"><span class="eyebrow-line"></span> RESEARCH AREAS</p>
+              <h2 class="section-title"><span data-i18n="researchTitle">研究方向</span><span class="title-period">.</span></h2>
+            </div>
+            <p class="section-intro" data-i18n="researchLead">研究涵蓋電源網路、晶片熱分析與智慧化設計，<br />以演算法回應晶片設計的真實挑戰。</p>
+          </div>
+
+          <article class="featured-research">
+            <div class="featured-number">01</div>
+            <div class="featured-main">
+              <p class="eyebrow" data-i18n="featuredEyebrow">FEATURED TOPIC</p>
+              <h3>Power Delivery Network</h3>
+              <p class="featured-subtitle" data-i18n="pdnSubtitle">電源傳輸網路分析、模擬與最佳化</p>
+              <p class="featured-description" data-i18n="pdnDescription">以線性代數為基礎：把電源網路各節點的電壓當成未知數，根據電路定律建立 Ax=b 形式的大型稀疏線性方程組，求出電壓分布並分析 IR-drop。團隊研究稀疏求解、AMG 與平行運算，讓大型晶片的電源分析更有效率。</p>
+              <div class="tag-list"><span>Static / Dynamic IR-drop</span><span>Sparse Solver</span><span>AMG</span><span>Model Order Reduction</span><span>Parallel Simulation</span></div>
+            </div>
+            <div class="circuit-art" aria-hidden="true">
+              <div class="circuit-orbit orbit-one"></div><div class="circuit-orbit orbit-two"></div>
+              <div class="circuit-core">PDN</div>
+              <i class="node node-a"></i><i class="node node-b"></i><i class="node node-c"></i><i class="node node-d"></i><i class="node node-e"></i>
+            </div>
+          </article>
+
+          <article class="featured-research thermal-featured">
+            <div class="featured-number">02</div>
+            <div class="featured-main">
+              <p class="eyebrow" data-i18n="featuredEyebrow">研究主題</p>
+              <h3>Thermal Analysis</h3>
+              <p class="featured-subtitle" data-i18n="thermalSubtitle">晶片熱分析與熱完整性</p>
+              <p class="featured-description" data-i18n="thermalDescription">團隊以 EDA 模擬分析晶片溫度分布與熱點，探討功耗、電源與熱效應之間的交互影響，協助評估熱風險並支援溫度感知設計。</p>
+              <div class="tag-list"><span>Thermal Simulation</span><span>Hotspot Analysis</span><span>Power-Thermal Coupling</span><span>Temperature-Aware Design</span></div>
+            </div>
+            <div class="circuit-art thermal-art" aria-hidden="true">
+              <div class="circuit-orbit orbit-one"></div><div class="circuit-orbit orbit-two"></div>
+              <div class="circuit-core thermal-core">°C</div>
+              <i class="node node-a"></i><i class="node node-b"></i><i class="node node-c"></i><i class="node node-d"></i><i class="node node-e"></i>
+            </div>
+          </article>
+
+          <div class="research-grid">
+            <article class="research-card">
+              <span class="card-index">03 / PHYSICAL DESIGN</span><div class="research-icon" aria-hidden="true">⌗</div>
+              <h3 data-i18n="researchCardTitle2">積體電路實體設計</h3><p data-i18n="researchCardBody2">Physical Synthesis、Placement、Routing 與實體設計最佳化，涵蓋早期 PDN 規劃與 Power Integrity-aware Design。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="research-card">
+              <span class="card-index">04 / INTEGRITY</span><div class="research-icon" aria-hidden="true">⌁</div>
+              <h3 data-i18n="researchCardTitle3">Signal / Power Integrity</h3><p data-i18n="researchCardBody3">分析晶片層級訊號完整性、電源雜訊與 IR Drop 等問題。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="research-card">
+              <span class="card-index">05 / SIMULATION</span><div class="research-icon" aria-hidden="true">∿</div>
+              <h3 data-i18n="researchCardTitle4">電路模擬與設計自動化</h3><p data-i18n="researchCardBody4">大規模線性與非線性電路模擬、稀疏矩陣數值演算法、互連建模及統計時序分析。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="research-card">
+              <span class="card-index">06 / AI × EDA</span><div class="research-icon" aria-hidden="true">✳</div>
+              <h3 data-i18n="researchCardTitle5">AI-assisted EDA</h3><p data-i18n="researchCardBody5">以機器學習與 AI Agent 協助設計空間探索、實體設計最佳化與智慧化 PDN 參數調校。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="research-card">
+              <span class="card-index">07 / CIRCUITS</span><div class="research-icon" aria-hidden="true">ϟ</div>
+              <h3 data-i18n="researchCardTitle6">高速、低功耗電路與微處理機</h3><p data-i18n="researchCardBody6">高速數位電路、低功耗電路、高速 Dynamic Logic，以及微處理機電路與系統設計。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="research-card">
+              <span class="card-index">08 / ANALOG CIRCUITS</span><div class="research-icon" aria-hidden="true">≈</div>
+              <h3 data-i18n="researchCardTitle7">類比電路設計</h3><p data-i18n="researchCardBody7">延續教授過去在類比電路領域的研究經驗，涵蓋電路架構、特性分析與模擬驗證。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="career-section section-pad" id="career">
+        <div class="page-shell career-grid">
+          <div class="career-content">
+            <p class="eyebrow" data-i18n="careerEyebrow"><span class="eyebrow-line"></span> CAREER PATHS · 職涯發展</p>
+            <h2 class="section-title" data-i18n="careerTitle">從研究出發<br /><em>連結晶片產業。</em></h2>
+            <p class="career-description" data-i18n="careerIntro">實驗室研究與訓練可銜接半導體、IC 設計及 EDA 產業，畢業後可朝台積電、聯發科、瑞昱、聯詠、新思科技（Synopsys）、Cadence 等一線公司發展。</p>
+          </div>
+          <div class="career-panel">
+            <p class="eyebrow career-companies-title" data-i18n="careerCompaniesTitle"><span class="eyebrow-line"></span> CAREER DESTINATIONS · 職涯方向</p>
+            <ul class="career-companies" aria-label="相關企業" data-i18n-aria="careerCompaniesLabel">
+              <li data-i18n="careerCompany1">台積電</li>
+              <li data-i18n="careerCompany2">聯發科</li>
+              <li data-i18n="careerCompany3">瑞昱</li>
+              <li data-i18n="careerCompany4">聯詠</li>
+              <li data-i18n="careerCompany5">Synopsys 新思科技</li>
+              <li data-i18n="careerCompany6">Cadence</li>
+              <li data-i18n="careerCompany7">Intel</li>
+              <li data-i18n="careerCompany8">一線 IC 設計公司</li>
+              <li data-i18n="careerCompany9">Google</li>
+            </ul>
+            <p class="career-alumni" data-i18n="careerAlumni">過去也有實驗室成員前往 Intel 等國際科技公司發展。</p>
+            <p class="career-invitation" data-i18n="careerInvite">對 EDA 領域或 IC 設計有興趣？歡迎來實驗室聊聊，認識研究主題與團隊生活。</p>
+            <p class="career-expectations" data-i18n="careerExpectations">為了維持研究水準，本實驗室的標準較高、訓練也相對精實。如果您準備好投入大量心力，我們非常歡迎；若您期望較輕鬆的實驗室生活，請務必三思。謝謝您！</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="professor-section section-pad" id="professor">
+        <div class="page-shell professor-grid">
+          <div class="professor-visual">
+            <img class="professor-photo" src="assets/professor-chen.jpg" data-image-slot="professor" alt="陳中平教授" data-i18n-alt="professorPhotoAlt" loading="lazy" />
+            <div class="professor-visual-caption"><span>PRINCIPAL INVESTIGATOR</span><span>NTU · EDA GROUP</span></div>
+          </div>
+          <div class="professor-content">
+            <p class="eyebrow" data-i18n="professorEyebrow"><span class="eyebrow-line"></span> PRINCIPAL INVESTIGATOR</p>
+            <h2>陳中平教授</h2>
+            <p class="professor-en">CHUNG-PING CHEN, Ph.D.</p>
+            <p class="professor-bio" data-i18n="professorBio1">陳中平教授畢業於交通大學資訊工程學系，並取得美國德州大學奧斯汀分校電腦科學碩士與博士學位。曾任 Intel Strategic CAD Labs Senior CAD Engineer，之後於威斯康辛大學麥迪遜分校任教，並於 2003 年加入國立臺灣大學。</p>
+            <p class="professor-bio" data-i18n="professorBio2">陳教授長期投入 VLSI 電腦輔助設計研究，涵蓋奈米積體電路實體合成、統計時序分析、線路與電路模擬、互連最佳化、光學微影製程模擬，以及 Signal / Power / Thermal Integrity Analysis。團隊研究成果持續發表於 DAC、ICCAD、DATE、ISPD 與 ASP-DAC 等國際會議。</p>
+            <div class="professor-links">
+              <a class="text-link" href="https://www.ee.ntu.edu.tw/profile1.php?teacher_id=943008" target="_blank" rel="noreferrer"><span data-i18n="professorProfileLink">臺大電機教授個人頁</span><span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://www.ee.ntu.edu.tw/publist1.php?id=74" target="_blank" rel="noreferrer"><span data-i18n="officialPapersLink">臺大電機完整著作列表</span><span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="awards-block">
+              <p class="eyebrow" data-i18n="recognitionEyebrow">SELECTED RECOGNITION</p>
+              <div class="awards-list"><span>Intel D2000 Award</span><span>NSF CAREER Award</span><span>ACM/SIGDA Outstanding Young Faculty Award</span><span>Peter Schneider Faculty Development Award</span><span data-i18n="teamPaperAward">ISPD Best Paper Award（團隊）</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="teacher-videos-section section-pad" id="teacher-videos">
+        <div class="page-shell">
+          <div class="section-topline">
+            <div>
+              <p class="eyebrow" data-i18n="teacherDanceEyebrow"><span class="eyebrow-line"></span> TEACHER IN MOTION</p>
+              <h2 class="section-title"><span data-i18n="teacherDanceTitle">老師跳舞影片</span><span class="title-period">.</span></h2>
+            </div>
+            <p class="section-intro" data-i18n="teacherDanceIntro">收藏老師充滿活力的舞蹈片段。</p>
+          </div>
+          <div class="teacher-video-grid">
+            <figure class="teacher-video-card">
+              <video controls playsinline preload="metadata" aria-label="老師跳舞影片 01" data-i18n-aria="teacherDanceVideo1Label">
+                <source src="assets/videos/teacher-dance-01.mp4" type="video/mp4" />
+                您的瀏覽器不支援影片播放。
+              </video>
+              <figcaption><span>01 / VIDEO</span><h3 data-i18n="teacherDanceVideo1Title">老師跳舞影片 01</h3></figcaption>
+            </figure>
+            <figure class="teacher-video-card">
+              <video controls playsinline preload="metadata" aria-label="老師跳舞影片 02" data-i18n-aria="teacherDanceVideo2Label">
+                <source src="assets/videos/teacher-dance-02.mp4" type="video/mp4" />
+                您的瀏覽器不支援影片播放。
+              </video>
+              <figcaption><span>02 / VIDEO</span><h3 data-i18n="teacherDanceVideo2Title">老師跳舞影片 02</h3></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="teacher-quotes-section section-pad" id="teacher-quotes">
+        <div class="page-shell">
+          <div class="section-topline">
+            <div>
+              <p class="eyebrow" data-i18n="teacherQuotesEyebrow"><span class="eyebrow-line"></span> TEACHER’S WORDS</p>
+              <h2 class="section-title"><span data-i18n="teacherQuotesTitle">老師名言</span><span class="title-period">.</span></h2>
+            </div>
+            <p class="section-intro" data-i18n="teacherQuotesIntro">陳中平教授以「人生路的最佳化」分享求學、研究與職涯的體會。</p>
+          </div>
+          <article class="teacher-speech-card">
+            <header class="teacher-speech-heading">
+              <p class="eyebrow" data-i18n="teacherSpeechEyebrow">演講摘要 · 92 年 9 月 18 日</p>
+              <h3 data-i18n="teacherSpeechTitle">人生路的最佳化</h3>
+              <p data-i18n="teacherSpeechByline">陳中平教授｜臺大電機之友「學術漫談」系列</p>
+            </header>
+            <blockquote class="teacher-quote-highlight" data-i18n="teacherQuoteHighlight">「我們無法控制時事變化與環境改變，但我們可以擁有一顆開闊與無限學習的心，以應付人生路上的各種變化。」</blockquote>
+            <div class="teacher-speech-copy">
+              <p data-i18n="teacherSpeechParagraph1">陳老師在大學時唸的是資工，出國唸的是電機；在美國期間曾在 IBM 工作過，也曾在威斯康辛教過書；目前是電子所 ICS 組的教授。多樣化的體驗使他講起人生際遇格外令人感受深刻。以下是陳老師給學生們各方面的建議。</p>
+              <p data-i18n="teacherSpeechParagraph2">在求學方面，陳老師認為要在興趣與學業間取得平衡，並避免單面向的學習。台大的學生在國內已是天之驕子，但是人外有人、天外有天，要隨時保持謙虛與不斷上進學習的心。在求學路上，同學間除了在學業上的競爭以外，更要懂得互助合作，學會 team work 的技巧，這在工作上是很重要的。</p>
+              <p data-i18n="teacherSpeechParagraph3">在感情方面，陳老師認為愛是兩人一同成長；他鼓勵學生們多交些朋友，不要因為感情受挫而想不開。對於很多學生在意的出國求學這方面，陳老師認為出國最重要的是磨練語文能力並訓練獨立生活；尤其在國外人生地不熟，在陌生的環境中成長通常有助於培養一個人未來獨立生活的能力。</p>
+              <p data-i18n="teacherSpeechParagraph4">陳老師認為研究像是一種枯坐冥想，指導教授能教給學生最重要的是正確的做事態度。在就業方面，陳老師建議學生了解自己的興趣與性向，能對自己的工作發生興趣、產生熱忱最為重要。業界和學術界的差異，在於學校中強調較多的理論，而業界較重視實務與理論的結合。最後陳老師勉勵大家，人生路上有我們可以掌握與不可掌握的東西。我們無法控制時事變化與環境改變，但我們可以擁有一顆開闊與無限學習的心，以應付人生路上的各種變化。</p>
+            </div>
+            <a class="text-link" href="https://alumni.ee.ntu.edu.tw/?p=382" target="_blank" rel="noopener noreferrer"><span data-i18n="teacherSpeechSource">閱讀臺大電機之友原文</span><span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="publications-section section-pad" id="publications">
+        <div class="page-shell">
+          <div class="section-topline">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> PUBLICATIONS</p>
+              <h2 class="section-title"><span data-i18n="publicationsTitle">教師論文</span><span class="title-period">.</span></h2>
+            </div>
+            <p class="section-intro" data-i18n="publicationsIntro">依臺大電機系公開著作列表整理，按期刊與會議論文分類。</p>
+          </div>
+          <p class="publication-source-note" data-i18n="publicationSourceNote">來源頁目前列出的論文年份為 1999–2005；最新資料請以臺大電機系官方列表為準。</p>
+          <div class="publication-accordions">
+            <details class="publication-group">
+              <summary><span data-i18n="journalPapers">期刊論文與書籍章節</span><span class="publication-count" id="journal-count">11</span></summary>
+              <ol class="publication-list" id="journal-papers"></ol>
+            </details>
+            <details class="publication-group">
+              <summary><span data-i18n="conferencePapers">會議與研討會論文</span><span class="publication-count" id="conference-count">48</span></summary>
+              <ol class="publication-list" id="conference-papers"></ol>
+            </details>
+          </div>
+          <a class="text-link" href="https://www.ee.ntu.edu.tw/publist1.php?id=74" target="_blank" rel="noreferrer"><span data-i18n="officialPapersLink">臺大電機完整著作列表</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="members-section section-pad" id="members">
+        <div class="page-shell">
+          <div class="section-topline members-topline">
+            <div>
+              <p class="eyebrow" data-i18n="membersEyebrow"><span class="eyebrow-line"></span> OUR PEOPLE</p>
+              <h2 class="section-title">研究團隊<span class="title-period">.</span></h2>
+            </div>
+          </div>
+          <div class="members-grid" id="members-grid" aria-live="polite"></div>
+          <noscript><p class="noscript-note" data-i18n="membersNoScript">請啟用 JavaScript 以顯示團隊成員預留版位。</p></noscript>
+        </div>
+      </section>
+
+      <section class="gallery-section section-pad" id="gallery">
+        <div class="page-shell">
+          <div class="section-topline">
+            <div>
+              <p class="eyebrow" data-i18n="galleryEyebrow"><span class="eyebrow-line"></span> LAB LIFE</p>
+              <h2 class="section-title"><span data-i18n="galleryTitle">實驗室活動相簿</span><span class="title-period">.</span></h2>
+            </div>
+            <p class="section-intro" data-i18n="galleryIntro">記錄研究室的活動、交流與日常。</p>
+          </div>
+          <article class="gallery-featured-video">
+            <video controls playsinline preload="metadata" aria-label="電子所羽球競賽影片" data-i18n-aria="galleryBadmintonVideoLabel">
+              <source src="assets/videos/electronics-badminton-competition.mp4" type="video/mp4" />
+              您的瀏覽器不支援影片播放。
+            </video>
+            <div class="gallery-featured-copy">
+              <p class="eyebrow">FEATURED VIDEO</p>
+              <h3 data-i18n="galleryBadmintonTitle">電子所羽球競賽</h3>
+              <p data-i18n="galleryBadmintonDescription">記錄實驗室成員參與電子所羽球競賽的活動片段。</p>
+            </div>
+          </article>
+          <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
+          <div class="gallery-empty" id="gallery-empty" role="status">
+            <span class="gallery-empty-icon" aria-hidden="true">▧</span>
+            <p data-i18n="galleryEmpty">活動照片即將更新，敬請期待。</p>
+          </div>
+          <a class="gallery-admin-link" id="gallery-admin-link" href="admin/">
+            <span data-i18n="galleryManage">相簿與圖片管理</span><span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="admins-section section-pad" id="admins">
+        <div class="page-shell">
+          <div class="section-topline">
+            <div>
+              <p class="eyebrow" data-i18n="adminsEyebrow"><span class="eyebrow-line"></span> WEBMASTERS</p>
+              <h2 class="section-title"><span data-i18n="adminsTitle">網站管理員</span><span class="title-period">.</span></h2>
+            </div>
+            <p class="section-intro" data-i18n="adminsIntro">網站內容與更新由實驗室管理員維護。</p>
+          </div>
+          <ul class="admins-list">
+            <li>陳冠宏</li>
+            <li>李柏輝 · <a href="mailto:Aa0935358809@gmail.com">Aa0935358809@gmail.com</a></li>
+            <li>G-Dragon</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="page-shell contact-inner">
+          <div><p class="eyebrow" data-i18n="contactEyebrow"><span class="eyebrow-line"></span> GET IN TOUCH</p><h2 data-i18n="contactTitle">一起探索<br />晶片設計的下一步。</h2></div>
+          <div class="contact-details"><p data-i18n="contactDepartment">國立臺灣大學 電機工程學系暨電子工程學研究所</p><p data-i18n="contactAddress">臺灣臺北市大安區羅斯福路四段一號<br />博理館 405 室</p><p class="lab-inquiry"><span data-i18n="labInquiry">研究室相關詢問，請寄信給</span><br /><a href="mailto:Aa0935358809@gmail.com">Aa0935358809@gmail.com</a></p><a href="https://www.ee.ntu.edu.tw/" target="_blank" rel="noreferrer"><span data-i18n="ntuWebsiteLink">臺大電機系網站</span><span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell footer-inner"><a class="footer-brand" href="#home">SoC VLSI-EDA <span>LABORATORY · BL405</span></a><p data-i18n="footerDepartment">國立臺灣大學電機工程學系暨電子工程學研究所</p><span class="footer-copy">© <span id="year"></span> NTU SoC VLSI-EDA Lab</span></div>
+    </footer>
+    <script src="publications.js"></script>
+    <script src="script.js?v=member-gallery-crop-20261105-1"></script>
+  </body>
+</html>
+
+

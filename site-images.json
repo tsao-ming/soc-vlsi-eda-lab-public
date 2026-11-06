@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "hero": {
+    "image": "assets/lab-team-poster.jpg",
+    "alt": {
+      "zh": "SoC VLSI-EDA 實驗室活動影片",
+      "en": "SoC VLSI-EDA Laboratory activity video"
+    }
+  },
+  "professor": {
+    "image": "assets/professor-chen.jpg",
+    "alt": {
+      "zh": "陳中平教授",
+      "en": "Professor Chung-Ping Chen"
+    }
+  },
+  "members": [
+    {
+      "id": "member-01",
+      "name": "李柏輝",
+      "image": "assets/members/member-01.jpg"
+    },
+    {
+      "id": "member-02",
+      "name": "曹世明",
+      "image": "assets/members/member-02-tsao-shih-ming.jpeg"
+    },
+    {
+      "id": "member-03",
+      "name": "吳樹安",
+      "image": "assets/members/member-03-wu-shuan.jpg"
+    },
+    {
+      "id": "member-04",
+      "name": "高孝傑",
+      "image": "assets/members/member-04.jpg"
+    },
+    {
+      "id": "member-05",
+      "name": "陳冠宏",
+      "image": "assets/members/member-05.jpg"
+    },
+    {
+      "id": "member-06",
+      "name": "林志強",
+      "image": "assets/members/member-06.jpg"
+    },
+    {
+      "id": "member-11",
+      "name": "陳威佑",
+      "image": "assets/members/member-11.jpg"
+    },
+    {
+      "id": "member-07",
+      "name": "謝秉成",
+      "image": "assets/members/member-07.jpg"
+    },
+    {
+      "id": "member-09",
+      "name": "詹博鈞",
+      "image": "assets/members/member-09.jpg"
+    },
+    {
+      "id": "member-10",
+      "name": "鄭元周",
+      "image": "assets/members/member-10.jpg"
+    },
+    {
+      "id": "member-08",
+      "name": "范綱傑",
+      "image": "assets/members/member-08.jpg"
+    },
+    {
+      "id": "member-12",
+      "name": "劉群詠",
+      "image": "assets/members/member-12.jpg"
+    },
+    {
+      "id": "member-13",
+      "name": "潘妍曦",
+      "image": "assets/members/member-13.jpg"
+    },
+    {
+      "id": "member-14",
+      "name": "胡芷寧",
+      "image": "assets/members/member-14.jpg"
+    },
+    {
+      "id": "member-15",
+      "name": "許程胤",
+      "image": "assets/members/member-15.jpg"
+    },
+    {
+      "id": "member-16",
+      "name": "凃岳霖",
+      "image": "assets/members/member-16.jpg"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "122a36fd70afe19ff5360a8e79f6ddf5",
+      "image": "assets/gallery/lab-gathering-group.webp",
+      "date": "",
+      "title": {
+        "zh": "實驗室團隊聚會",
+        "en": "Lab Team Gathering"
+      },
+      "description": {
+        "zh": "實驗室成員相聚交流，記錄團隊生活點滴。",
+        "en": "Lab members gather and share a moment from team life."
+      }
+    },
+    {
+      "id": "aea1eaae98ba6496a8fe3531fa06efd7",
+      "image": "assets/gallery/lab-gathering-cake.webp",
+      "date": "",
+      "title": {
+        "zh": "實驗室慶生活動",
+        "en": "Lab Celebration"
+      },
+      "description": {
+        "zh": "與團隊一同慶祝，分享實驗室生活。",
+        "en": "Celebrating together and sharing a moment from lab life."
+      }
+    },
+    {
+      "id": "2e02c4e52b0c99d6a0b49efbba319149",
+      "image": "assets/gallery/lab-group-photo.webp",
+      "date": "",
+      "title": {
+        "zh": "實驗室團體合照",
+        "en": "Lab Group Photo"
+      },
+      "description": {
+        "zh": "留下團隊成員共同參與活動的合照。",
+        "en": "A group photo of lab members at an event."
+      }
+    },
+    {
+      "id": "943533fd2b48b98e2f8de8ba0168cf87",
+      "image": "assets/gallery/lab-life-poster.webp",
+      "date": "",
+      "title": {
+        "zh": "實驗室生活影片封面",
+        "en": "Lab Life Video Cover"
+      },
+      "description": {
+        "zh": "實驗室活動影片的封面畫面。",
+        "en": "Cover image for a laboratory life video."
+      }
+    },
+    {
+      "id": "adc23920df1107b34418cf0150e8c661",
+      "image": "assets/gallery/lab-outing-ximending.webp",
+      "date": "",
+      "title": {
+        "zh": "西門町團隊出遊",
+        "en": "Team Outing in Ximending"
+      },
+      "description": {
+        "zh": "實驗室團隊外出活動紀錄。",
+        "en": "A record of a lab team outing."
+      }
+    },
+    {
+      "id": "4647fc4654488861bbacc9bd7d9592bc",
+      "image": "assets/gallery/lab-research-topics.webp",
+      "date": "",
+      "title": {
+        "zh": "研究方向分享",
+        "en": "Research Topics"
+      },
+      "description": {
+        "zh": "分享實驗室研究主題與團隊工作。",
+        "en": "Sharing the lab’s research topics and work."
+      }
+    }
+  ]
+}
